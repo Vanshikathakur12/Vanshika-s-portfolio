@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | B.Tech Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">My<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact" class="btn-small">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Vanshika Thakur</span></h1>
+            <p>B.Tech 1st Year Student | Web Developer | Tech Enthusiast</p>
+            <a href="#projects" class="btn-hero">Explore Projects</a>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Vanshika Thakur" required>
+            <input type="email" placeholder="tvanshika958@gmail.com" required>
+            <input type="linkedln" placeholder="https://www.linkedin.com/in/vanshika-thakur-b4a954378" required>
+            <textarea placeholder="Message" required></textarea>
+            <button class="btn-large">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>vanshikathakur@cgcuni.in</p>
+    </footer>
+
+</body>
+</html>
+            <style>
+                * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #D6ECFF;
+    color: #1A1A1A;
+    line-height: 1.6;
+}
+header {
+    background: #B7D8F5;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo span {
+    color: #5B9BD5;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.nav-links a:hover {
+    color: #5B9BD5;
+}
+.btn-small {
+    background: #5B9BD5;
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: white !important;
+}
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #B7D8F5, #D6ECFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.hero-text h1 span {
+    color: #5B9BD5;
+}
+.btn-hero {
+    background: #5B9BD5;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.btn-hero:hover {
+    background: #7BB2E0;
+    transform: scale(1.1);
+}
+.section {
+    width: 88%;
+    margin: 40px auto;
+}
+.section-title {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+    border-left: 8px solid #5B9BD5;
+    padding-left: 15px;
+}
+
+.contact {
+    background: #B7D8F5;
+    padding: 40px;
+    border-radius: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input,
+.contact textarea {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-large {
+    background: #5B9BD5;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-large:hover {
+    background: #7BB2E0;
+}
+   </style>
